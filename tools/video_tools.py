@@ -32,9 +32,7 @@ async def luma_generate_video(
     ] = False,
     enhancement: Annotated[
         bool,
-        Field(
-            description="If true, enable clarity enhancement for the video. Default is false."
-        ),
+        Field(description="If true, enable clarity enhancement for the video. Default is false."),
     ] = False,
 ) -> str:
     """Generate AI video from a text prompt using Luma Dream Machine.
@@ -84,21 +82,15 @@ async def luma_generate_video_from_image(
     ] = "",
     aspect_ratio: Annotated[
         AspectRatio,
-        Field(
-            description="Video aspect ratio. Usually should match your input image ratio."
-        ),
+        Field(description="Video aspect ratio. Usually should match your input image ratio."),
     ] = DEFAULT_ASPECT_RATIO,
     loop: Annotated[
         bool,
-        Field(
-            description="If true, generate a looping video. Default is false."
-        ),
+        Field(description="If true, generate a looping video. Default is false."),
     ] = False,
     enhancement: Annotated[
         bool,
-        Field(
-            description="If true, enable clarity enhancement. Default is false."
-        ),
+        Field(description="If true, enable clarity enhancement. Default is false."),
     ] = False,
 ) -> str:
     """Generate AI video using reference images as start and/or end frames.
