@@ -49,7 +49,7 @@ uv pip install -e .
 cp .env.example .env
 
 # Edit with your API token
-echo "ACEDATA_API_TOKEN=your_token_here" > .env
+echo "ACEDATACLOUD_API_TOKEN=your_token_here" > .env
 ```
 
 ### 4. Run
@@ -75,7 +75,7 @@ Add to your Claude Desktop configuration:
     "luma": {
       "command": "mcp-luma",
       "env": {
-        "ACEDATA_API_TOKEN": "your_api_token_here"
+        "ACEDATACLOUD_API_TOKEN": "your_api_token_here"
       }
     }
   }
@@ -91,7 +91,7 @@ Or if using uv:
       "command": "uv",
       "args": ["run", "--directory", "/path/to/mcp-luma", "mcp-luma"],
       "env": {
-        "ACEDATA_API_TOKEN": "your_api_token_here"
+        "ACEDATACLOUD_API_TOKEN": "your_api_token_here"
       }
     }
   }
@@ -170,8 +170,8 @@ Claude: I'll extend the video with additional content.
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `ACEDATA_API_TOKEN` | API token from AceDataCloud | **Required** |
-| `ACEDATA_API_BASE_URL` | API base URL | `https://api.acedata.cloud` |
+| `ACEDATACLOUD_API_TOKEN` | API token from AceDataCloud | **Required** |
+| `ACEDATACLOUD_API_BASE_URL` | API base URL | `https://api.acedata.cloud` |
 | `LUMA_DEFAULT_ASPECT_RATIO` | Default aspect ratio | `16:9` |
 | `LUMA_REQUEST_TIMEOUT` | Request timeout in seconds | `180` |
 | `LOG_LEVEL` | Logging level | `INFO` |
