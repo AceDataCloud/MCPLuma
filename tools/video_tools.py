@@ -34,6 +34,14 @@ async def luma_generate_video(
         bool,
         Field(description="If true, enable clarity enhancement for the video. Default is false."),
     ] = False,
+    timeout: Annotated[
+        int | None,
+        Field(description="Timeout in seconds for the API to return data. Default is 300."),
+    ] = None,
+    callback_url: Annotated[
+        str | None,
+        Field(description="Webhook callback URL for asynchronous notifications. When provided, the API will call this URL when the video is generated."),
+    ] = None,
 ) -> str:
     """Generate AI video from a text prompt using Luma Dream Machine.
 
@@ -56,6 +64,8 @@ async def luma_generate_video(
         aspect_ratio=aspect_ratio,
         loop=loop,
         enhancement=enhancement,
+        timeout=timeout,
+        callback_url=callback_url,
     )
     return format_video_result(result)
 
@@ -92,6 +102,14 @@ async def luma_generate_video_from_image(
         bool,
         Field(description="If true, enable clarity enhancement. Default is false."),
     ] = False,
+    timeout: Annotated[
+        int | None,
+        Field(description="Timeout in seconds for the API to return data. Default is 300."),
+    ] = None,
+    callback_url: Annotated[
+        str | None,
+        Field(description="Webhook callback URL for asynchronous notifications. When provided, the API will call this URL when the video is generated."),
+    ] = None,
 ) -> str:
     """Generate AI video using reference images as start and/or end frames.
 
@@ -117,6 +135,8 @@ async def luma_generate_video_from_image(
         "aspect_ratio": aspect_ratio,
         "loop": loop,
         "enhancement": enhancement,
+        "timeout": timeout,
+        "callback_url": callback_url,
     }
 
     if start_image_url:
