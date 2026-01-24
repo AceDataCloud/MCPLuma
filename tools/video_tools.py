@@ -40,7 +40,9 @@ async def luma_generate_video(
     ] = None,
     callback_url: Annotated[
         str | None,
-        Field(description="Webhook callback URL for asynchronous notifications. When provided, the API will call this URL when the video is generated."),
+        Field(
+            description="Webhook callback URL for asynchronous notifications. When provided, the API will call this URL when the video is generated."
+        ),
     ] = None,
 ) -> str:
     """Generate AI video from a text prompt using Luma Dream Machine.
@@ -108,7 +110,9 @@ async def luma_generate_video_from_image(
     ] = None,
     callback_url: Annotated[
         str | None,
-        Field(description="Webhook callback URL for asynchronous notifications. When provided, the API will call this URL when the video is generated."),
+        Field(
+            description="Webhook callback URL for asynchronous notifications. When provided, the API will call this URL when the video is generated."
+        ),
     ] = None,
 ) -> str:
     """Generate AI video using reference images as start and/or end frames.
