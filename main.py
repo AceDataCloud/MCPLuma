@@ -61,7 +61,7 @@ Examples:
 Environment Variables:
   ACEDATACLOUD_API_TOKEN     API token from AceDataCloud (required)
   LUMA_DEFAULT_ASPECT_RATIO  Default aspect ratio (default: 16:9)
-  LUMA_REQUEST_TIMEOUT       Request timeout in seconds (default: 180)
+  LUMA_REQUEST_TIMEOUT       Request timeout in seconds (default: 1800)
   LOG_LEVEL                  Logging level (default: INFO)
         """,
     )

@@ -14,7 +14,7 @@ def test_settings_default_values():
         settings = Settings()
         assert settings.api_base_url == "https://api.acedata.cloud"
         assert settings.default_aspect_ratio == "16:9"
-        assert settings.request_timeout == 180.0
+        assert settings.request_timeout == 1800.0
         assert settings.server_name == "luma"
         assert settings.transport == "stdio"
 
