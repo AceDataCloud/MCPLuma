@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: mcp-luma
-          image: ghcr.io/acedatacloud/mcp-luma:latest
+          image: ghcr.io/acedatacloud/mcp-luma:${TAG}
           ports:
             - containerPort: 8000
               protocol: TCP
