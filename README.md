@@ -159,26 +159,26 @@ Clients connect with their own Bearer token — the server extracts the token fr
 
 ### Video Generation
 
-| Tool | Description |
-|------|-------------|
-| `luma_generate_video` | Generate video from a text prompt |
+| Tool                             | Description                           |
+| -------------------------------- | ------------------------------------- |
+| `luma_generate_video`            | Generate video from a text prompt     |
 | `luma_generate_video_from_image` | Generate video using reference images |
-| `luma_extend_video` | Extend an existing video by ID |
-| `luma_extend_video_from_url` | Extend an existing video by URL |
+| `luma_extend_video`              | Extend an existing video by ID        |
+| `luma_extend_video_from_url`     | Extend an existing video by URL       |
 
 ### Tasks
 
-| Tool | Description |
-|------|-------------|
-| `luma_get_task` | Query a single task status |
+| Tool                   | Description                  |
+| ---------------------- | ---------------------------- |
+| `luma_get_task`        | Query a single task status   |
 | `luma_get_tasks_batch` | Query multiple tasks at once |
 
 ### Information
 
-| Tool | Description |
-|------|-------------|
+| Tool                      | Description                  |
+| ------------------------- | ---------------------------- |
 | `luma_list_aspect_ratios` | List available aspect ratios |
-| `luma_list_actions` | List available API actions |
+| `luma_list_actions`       | List available API actions   |
 
 ## Usage Examples
 
@@ -211,27 +211,27 @@ Claude: I'll extend the video with additional content.
 
 ## Available Aspect Ratios
 
-| Aspect Ratio | Description | Use Case |
-|--------------|-------------|----------|
-| `16:9` | Landscape (default) | YouTube, TV, presentations |
-| `9:16` | Portrait | TikTok, Instagram Reels |
-| `1:1` | Square | Instagram posts |
-| `4:3` | Traditional | Classic video format |
-| `3:4` | Portrait traditional | Portrait content |
-| `21:9` | Ultrawide | Cinematic content |
-| `9:21` | Tall ultrawide | Special vertical displays |
+| Aspect Ratio | Description          | Use Case                   |
+| ------------ | -------------------- | -------------------------- |
+| `16:9`       | Landscape (default)  | YouTube, TV, presentations |
+| `9:16`       | Portrait             | TikTok, Instagram Reels    |
+| `1:1`        | Square               | Instagram posts            |
+| `4:3`        | Traditional          | Classic video format       |
+| `3:4`        | Portrait traditional | Portrait content           |
+| `21:9`       | Ultrawide            | Cinematic content          |
+| `9:21`       | Tall ultrawide       | Special vertical displays  |
 
 ## Configuration
 
 ### Environment Variables
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `ACEDATACLOUD_API_TOKEN` | API token from AceDataCloud | **Required** |
-| `ACEDATACLOUD_API_BASE_URL` | API base URL | `https://api.acedata.cloud` |
-| `LUMA_DEFAULT_ASPECT_RATIO` | Default aspect ratio | `16:9` |
-| `LUMA_REQUEST_TIMEOUT` | Request timeout in seconds | `1800` |
-| `LOG_LEVEL` | Logging level | `INFO` |
+| Variable                    | Description                 | Default                     |
+| --------------------------- | --------------------------- | --------------------------- |
+| `ACEDATACLOUD_API_TOKEN`    | API token from AceDataCloud | **Required**                |
+| `ACEDATACLOUD_API_BASE_URL` | API base URL                | `https://api.acedata.cloud` |
+| `LUMA_DEFAULT_ASPECT_RATIO` | Default aspect ratio        | `16:9`                      |
+| `LUMA_REQUEST_TIMEOUT`      | Request timeout in seconds  | `1800`                      |
+| `LOG_LEVEL`                 | Logging level               | `INFO`                      |
 
 ### Command Line Options
 
