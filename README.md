@@ -1,5 +1,7 @@
 # MCP Luma
 
+[![PyPI version](https://img.shields.io/pypi/v/mcp-luma.svg)](https://pypi.org/project/mcp-luma/)
+[![PyPI downloads](https://img.shields.io/pypi/dm/mcp-luma.svg)](https://pypi.org/project/mcp-luma/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![MCP](https://img.shields.io/badge/MCP-Compatible-green.svg)](https://modelcontextprotocol.io)
